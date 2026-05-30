@@ -13,327 +13,272 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
             line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
         }
 
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 2rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        nav {
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav ul li {
-            padding: 1rem 1.5rem;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #667eea;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23667eea" width="1200" height="600"/></svg>');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 4rem 0;
+            padding: 60px 20px;
             text-align: center;
         }
 
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
 
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #fff;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: transform 0.3s, box-shadow 0.3s;
+        .content {
+            padding: 40px 20px;
         }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        section {
-            padding: 3rem 0;
-            background-color: white;
-            margin: 2rem 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        section h2 {
-            color: #667eea;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .info-grid {
+        .info-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
         }
 
         .info-card {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .info-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
 
         .info-card h3 {
             color: #667eea;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .info-card p {
-            font-size: 1.1rem;
-            color: #555;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+        }
+
+        .services {
+            margin-top: 50px;
+        }
+
+        .services h2 {
+            text-align: center;
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .service-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #667eea;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: scale(1.05);
         }
 
         .rating {
+            background: #ffd700;
+            color: #333;
+            padding: 15px;
+            border-radius: 10px;
             text-align: center;
-            padding: 2rem;
-            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
-            border-radius: 8px;
-            margin: 2rem 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 30px 0;
         }
 
-        .stars {
-            font-size: 2rem;
-            color: #f39c12;
-            margin: 1rem 0;
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 25px;
         }
 
         .contact-info {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .contact-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info p {
-            font-size: 1.2rem;
-            margin: 0.5rem 0;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .feature-box {
-            padding: 2rem;
-            background-color: #f8f9fa;
-            border-right: 4px solid #667eea;
-            border-radius: 5px;
-            transition: all 0.3s;
-        }
-
-        .feature-box:hover {
-            background-color: #e9ecef;
-            transform: translateX(-5px);
-        }
-
-        .feature-box h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
+            font-size: 1.2em;
+            line-height: 2;
         }
 
         footer {
-            background-color: #2c3e50;
+            background: #333;
             color: white;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
+            padding: 30px;
+            margin-top: 0;
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
+            h1 {
+                font-size: 2em;
             }
 
-            .hero h2 {
-                font-size: 1.8rem;
+            .subtitle {
+                font-size: 1.1em;
             }
 
-            nav ul {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav ul li {
-                padding: 0.5rem;
-            }
-
-            .info-grid {
+            .info-section {
                 grid-template-columns: 1fr;
             }
+
+            header {
+                padding: 40px 20px;
+            }
+
+            .services h2 {
+                font-size: 2em;
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            background: #f5f7fa;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>ברוכים הבאים לעסק שלנו</h1>
-            <p>שירות מקצועי ואיכותי</p>
-        </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#home">דף הבית</a></li>
-            <li><a href="#about">אודות</a></li>
-            <li><a href="#services">שירותים</a></li>
-            <li><a href="#contact">צור קשר</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero">
-        <div class="container">
-            <h2>העסק המוביל בתחומו</h2>
-            <p>אנחנו כאן כדי לספק לכם את השירות הטוב ביותר</p>
-            <a href="#contact" class="btn">צור קשר עכשיו</a>
-        </div>
-    </div>
-
     <div class="container">
-        <section id="about">
-            <h2>אודות העסק</h2>
-            <p style="text-align: center; font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
-                אנו עסק מוביל המתמחה במתן שירותים איכותיים ומקצועיים. 
-                הצוות שלנו מורכב מאנשי מקצוע מנוסים המחויבים למצוינות ולשביעות רצון הלקוחות.
-                אנו מאמינים בשירות אישי, אמינות ומקצועיות ברמה הגבוהה ביותר.
-            </p>
+        <header>
+            <h1>🌟 ברוכים הבאים לעסק שלנו 🌟</h1>
+            <p class="subtitle">שירות מקצועי ואיכותי במיוחד עבורכם</p>
+        </header>
 
-            <div class="features">
-                <div class="feature-box">
-                    <h3>🎯 מקצועיות</h3>
-                    <p>צוות מיומן ומקצועי עם ניסיון רב שנים בתחום</p>
+        <div class="content">
+            <div class="info-section">
+                <div class="info-card">
+                    <h3>
+                        <span class="icon">📍</span>
+                        מיקום
+                    </h3>
+                    <p>נשמח לארח אותכם בעסק שלנו</p>
                 </div>
-                <div class="feature-box">
-                    <h3>⭐ איכות</h3>
-                    <p>שירות ברמה הגבוהה ביותר עם תשומת לב לכל פרט</p>
+
+                <div class="info-card">
+                    <h3>
+                        <span class="icon">📞</span>
+                        יצירת קשר
+                    </h3>
+                    <p>צרו איתנו קשר לפרטים נוספים</p>
                 </div>
-                <div class="feature-box">
-                    <h3>💎 אמינות</h3>
-                    <p>מחויבים לעמוד בהבטחות ובלוחות זמנים</p>
+
+                <div class="info-card">
+                    <h3>
+                        <span class="icon">⭐</span>
+                        שירות מעולה
+                    </h3>
+                    <p>מחויבים למצוינות בכל שירות</p>
                 </div>
             </div>
-        </section>
 
-        <section id="services">
-            <h2>השירותים שלנו</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <h3>שירות מקצועי</h3>
-                    <p>אנו מספקים שירות מקצועי ואיכותי המותאם לצרכי הלקוח</p>
-                </div>
-                <div class="info-card">
-                    <h3>ייעוץ מומחה</h3>
-                    <p>צוות המומחים שלנו זמין לייעוץ והכוונה בכל שלב</p>
-                </div>
-                <div class="info-card">
-                    <h3>תמיכה מלאה</h3>
-                    <p>אנו מלווים את הלקוחות שלנו לאורך כל הדרך</p>
+            <div class="rating">
+                ⭐ העסק שלנו מחויב לשירות איכותי ומקצועי ⭐
+            </div>
+
+            <div class="services">
+                <h2>השירותים שלנו</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>🎯 מקצועיות</h3>
+                        <p>צוות מנוסה ומקצועי</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>💼 אמינות</h3>
+                        <p>שירות אמין ואיכותי</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>⚡ זמינות</h3>
+                        <p>זמינים עבורכם</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>❤️ מסירות</h3>
+                        <p>מחויבים לשביעות רצונכם</p>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <div class="rating">
-            <h2>הדירוג שלנו</h2>
-            <div class="stars">★★★★★</div>
-            <p style="font-size: 1.2rem; color: #555;">לקוחות מרוצים ממליצים עלינו</p>
+            <div class="contact-section">
+                <h2>צרו קשר</h2>
+                <div class="contact-info">
+                    <p>📧 נשמח לענות על כל שאלה</p>
+                    <p>🕒 זמינים עבורכם</p>
+                    <p>💬 שירות לקוחות מעולה</p>
+                </div>
+                <a href="#" class="cta-button">צור קשר עכשיו</a>
+            </div>
         </div>
 
-        <section id="contact">
-            <h2>צור קשר</h2>
-            <div class="contact-info">
-                <h3>נשמח לשמוע ממך</h3>
-                <p>📍 נשמח לארח אותך בעסק שלנו</p>
-                <p>📞 צור איתנו קשר לפרטים נוספים</p>
-                <p>🕒 אנו כאן כדי לשרת אותך</p>
-                <div style="margin-top: 2rem;">
-                    <a href="#" class="btn">שלח הודעה</a>
-                </div>
-            </div>
-        </section>
+        <footer>
+            <p>&copy; 2024 כל הזכויות שמורות | עסק מוביל בתחומו</p>
+            <p style="margin-top: 10px;">מחויבים למצוינות ושביעות רצון הלקוחות</p>
+        </footer>
     </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 כל הזכויות שמורות | עסק מוביל ומקצועי</p>
-            <p style="margin-top: 0.5rem;">בנוי באהבה ומקצועיות</p>
-        </div>
-    </footer>
 </body>
 </html>
